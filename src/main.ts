@@ -120,3 +120,28 @@ console.log(`Open to work : ${open ? 'Yes' : 'No'}`)
 */
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.
+
+/*
+
+
+| Expression | My guess                                          | What happened | What TypeScript said? | Was I right? |
+|---|---|---|----------                                          ||
+| `"5" + 3` |                   53                               | | | |
+| `"5" - 3` |       error arithmetic op on string                |  | | |
+| `true + 1` |                  true                             | | | |
+| `0.1 + 0.2` |                 0.3                              | | | |
+| `null === 0` |                false                            | | | |
+| `null == undefined` |         true                             | | | |
+
+
+
+
+
+
+
+
+
+
+
+
+*/

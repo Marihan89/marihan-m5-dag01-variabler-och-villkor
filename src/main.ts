@@ -70,5 +70,52 @@ if (isstudent === true) {
 // TODO: avgör om kaféet är öppet (boolean): vardagar 7–18, helger 9–16
 // TODO: skriv ut "Öppet just nu: ja" eller "Öppet just nu: nej"
 
+let weekday: string = 'satuday'
+let time: number = 20
+let isworkday: boolean
+let open: boolean
+switch (weekday) {
+    case 'Sunday':
+    case 'Monday':
+    case 'Tuesday':
+    case 'Wedensday':
+    case 'Thursday':
+    case 'Friday':
+        isworkday = true
+        break
+    default:
+        isworkday = false
+}
+;(isworkday && time >= 7 && time <= 18) ||
+(!isworkday && time >= 9 && time <= 16)
+    ? console.log(`Open to Work : Yes`)
+    : console.log(`Open to Work : No`)
+
+/*  ORRRRRRRRRR
+
+if (
+    (isworkday && time >= 7 && time <= 18) ||
+    (!isworkday && time >= 9 && time <= 16)
+)
+    console.log(`Open to Work : Yes`)
+else {
+    console.log(`Open to Work : No`)
+}
+
+;
+*/
+
+/* Orrrrrrrrrrrrrrrrrrrrrrr
+
+open =
+    (isworkday && time >= 7 && time <= 18) ||
+    (!isworkday && time >= 9 && time <= 16)
+        ? true
+        : false
+console.log(`Open to work : ${open ? 'Yes' : 'No'}`)
+
+
+
+*/
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.

@@ -47,6 +47,13 @@ console.log(typeof s, typeof n, typeof b, typeof u, typeof nu)
 //       Moms ska ha två decimaler (toFixed(2))
 //       Håll musen över momsDel.toFixed(2). Vilken typ ger toFixed?
 
+let sum = antalBullar * prisBulle + antalkaffe * prisKaffe
+console.log(`Amount:  ${sum} kr`)
+const moms: number = 0.12
+let momsDel = (sum * moms) / 1.12
+console.log(`VAT (12%):  ${momsDel.toFixed(2)}`)
+//.tofixed returns a string
+
 // STEG 5 ------------------------------------------------------------
 // TODO: skapa ärStudent (boolean, true). Om ärStudent är true: rabatt 10 %.
 // TODO: räkna ut attBetala (number) och skriv ut "Att betala: ... kr"

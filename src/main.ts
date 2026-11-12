@@ -15,6 +15,14 @@ console.log('Hej från Kafé Kardemumma')
 // TODO: skriv ut kafeNamn
 //       Skriv typen själv, till exempel:  const kafeNamn: string = "..."
 
+const kafeNamn: string = 'Kafé Kardemumma'
+const prisBulle: number = 35
+const prisKaffe: number = 32
+let antalBullar: number = 2
+let antalkaffe: number = 1
+
+console.log(kafeNamn)
+
 // STEG 3 ------------------------------------------------------------
 // TODO: skapa en string, ett number, en boolean, en undefined och en null
 //       Typerna heter string, number, boolean, undefined och null

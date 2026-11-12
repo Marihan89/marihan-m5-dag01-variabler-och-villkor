@@ -48,7 +48,7 @@ console.log(typeof s, typeof n, typeof b, typeof u, typeof nu)
 //       Håll musen över momsDel.toFixed(2). Vilken typ ger toFixed?
 
 let sum = antalBullar * prisBulle + antalkaffe * prisKaffe
-console.log(`Amount:  ${sum} kr`)
+console.log(`Amount:  ${sum} Kr`)
 const moms: number = 0.12
 let momsDel = (sum * moms) / 1.12
 console.log(`VAT (12%):  ${momsDel.toFixed(2)}`)
@@ -58,6 +58,13 @@ console.log(`VAT (12%):  ${momsDel.toFixed(2)}`)
 // TODO: skapa ärStudent (boolean, true). Om ärStudent är true: rabatt 10 %.
 // TODO: räkna ut attBetala (number) och skriv ut "Att betala: ... kr"
 
+const isstudent: boolean = true
+
+if (isstudent === true) {
+    let topay = sum - sum * 0.1
+    // or we can use if(isstudent)
+    console.log(`To be paid: ${topay} Kr`)
+}
 // STEG 6 ------------------------------------------------------------
 // TODO: skapa veckodag (string, "lördag") och klockslag (number, 15)
 // TODO: avgör om kaféet är öppet (boolean): vardagar 7–18, helger 9–16

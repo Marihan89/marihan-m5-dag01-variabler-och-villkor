@@ -124,24 +124,27 @@ console.log(`Open to work : ${open ? 'Yes' : 'No'}`)
 /*
 
 
-| Expression | My guess                                          | What happened | What TypeScript said? | Was I right? |
-|---|---|---|----------                                          ||
-| `"5" + 3` |                   53                               | | | |
-| `"5" - 3` |       error arithmetic op on string                |  | | |
-| `true + 1` |                  true                             | | | |
-| `0.1 + 0.2` |                 0.3                              | | | |
-| `null === 0` |                false                            | | | |
-| `null == undefined` |         true                             | | | |
+| Expression | My guess                              | What happened  Was I right?           || What TypeScript said? |
+|---|---|---|----------                              |                                       |
+| `"5" + 3` |                   53                   | 53             true                   |
+| `"5" - 3` |       error arithmetic op on string    | 2              true                   | Error: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.| |
+| `true + 1` |                  true                 | error          wrong                  | Error: Operator '+' cannot be applied to types 'boolean' and 'number'.| |
+| `0.1 + 0.2` |                 0.3                  | 0.3            true                   | | |
+| `null === 0` |                false                | false          true                   | | |
+| `null == undefined` |         true                 | true           true                   |  | |
+
+--------------------------------------------------------------------------------
+
+i got this one wrong  `true + 1` i thought it will deal with 1
+as true as any number other than 0 is true as in conditions :(
 
 
 
 
-
-
-
-
-
-
+/*
+lines with errors
+`"5" - 3`
+`true + 1`
 
 
 */

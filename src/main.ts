@@ -70,22 +70,23 @@ if (isstudent === true) {
 // TODO: avgör om kaféet är öppet (boolean): vardagar 7–18, helger 9–16
 // TODO: skriv ut "Öppet just nu: ja" eller "Öppet just nu: nej"
 
-let weekday: string = 'satuday'
-let time: number = 20
+let weekday: string = 'monday'
+let time: number = 6
 let isworkday: boolean
 let open: boolean
-switch (weekday) {
-    case 'Sunday':
-    case 'Monday':
-    case 'Tuesday':
-    case 'Wedensday':
-    case 'Thursday':
-    case 'Friday':
+switch (weekday.toUpperCase()) {
+    case 'SUNDAY':
+    case 'MONDAY':
+    case 'TUESDAY':
+    case 'WEDENSDAY':
+    case 'THURSDAY':
+    case 'FRIDAY':
         isworkday = true
         break
     default:
         isworkday = false
 }
+
 ;(isworkday && time >= 7 && time <= 18) ||
 (!isworkday && time >= 9 && time <= 16)
     ? console.log(`Open to Work : Yes`)

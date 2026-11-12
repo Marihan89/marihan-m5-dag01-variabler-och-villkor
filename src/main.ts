@@ -29,6 +29,17 @@ console.log(kafeNamn)
 // TODO: skriv ut typeof för alla fem på en rad (tips: separera med komma)
 // TODO: prova att ge number-variabeln en text. Vad säger TypeScript?
 
+let s = ''
+let n = 11
+let b = false
+let u = undefined
+let nu = null
+
+console.log(typeof s, typeof n, typeof b, typeof u, typeof nu)
+
+/*n= "Hello"
+ the string isnt assignable to type number */
+
 // STEG 4 ------------------------------------------------------------
 // TODO: räkna ut summa = antalBullar * prisBulle + antalKaffe * prisKaffe
 // TODO: räkna ut momsDel (12 % ingår i priset): summa * 0.12 / 1.12
